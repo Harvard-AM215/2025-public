@@ -1,0 +1,11 @@
+.aider*
+.ipynb_checkpoints
+
+# Sync script configuration
+config/sync-config.sh
+
+# Public repo directory (if cloned locally)
+../2025-public
+
+# Temporary sync files
+.sync-temp/
