@@ -25,16 +25,16 @@ The examples we will study, along with associated questions we might address,inc
 
 <a href="https://canvas.harvard.edu/courses/156385">The class syllabus can be found by following this link.</a>
 
-* **[Canvas](https://canvas.harvard.edu/courses/140625):** Is used for posting grades and other class sensitive content.
-* **[Gradescope](https://www.gradescope.com/courses/821711):** Is used for homework and lab submissions.
-* **[Class Git repository](https://code.harvard.edu/AM215/main_2024):** The handouts and other material are provided through the `main` repository hosted in the AM215 organization. You can clone this repository once you have joined the AM215 organization.
+* **[Canvas](https://canvas.harvard.edu/courses/156385):** Is used for posting grades and other class sensitive content.
+* **[Gradescope](https://www.gradescope.com/courses/1112657):** Is used for homework and lab submissions.
+* **[Class Git repository](https://code.harvard.edu/AM215/main_2025):** The handouts and other material are provided through the `main` repository hosted in the AM215 organization. You can clone this repository once you have joined the AM215 organization.
 
 ```
-git clone git@code.harvard.edu:AM215/main_2024.git
+git clone git@code.harvard.edu:AM215/main_2025.git
 ```
 
 Membership to the AM215 organization be updated daily once the semester starts. If for some reason you are not given access, please wait until the afternoon. If you cannot access the organization, please fill [this form](https://docs.google.com/forms/d/1TxncfkQD0EFG32qalEpsRYWcnoONKOfw6ThyAtsfmy0/edit). You  must use our `*.harvard.edu` email and include your [NetID](https://harvard.service-now.com/ithelp?id=kb_article&sys_id=507aca5a1b653700efd8a79b2d4bcb59), which is also your <https://code.harvard.edu> username (something similar to `abc123`).
 
 ### <a id="class-forum"></a><a class="anchor-link" href="#class-forum">Class Discussion</a>
 
-We will use the [Ed Discussion forum](https://edstem.org/us/courses/61992/discussion/) on our Canvas page as our main communication platform. Questions regarding homework, sections or lecture material must be posted on this forum and you are encouraged to reply to questions if you know the answer or you can share a useful contribution.
+We will use the [Ed Discussion forum](https://edstem.org/us/courses/81434/discussion/) on our Canvas page as our main communication platform. Questions regarding homework, sections or lecture material must be posted on this forum and you are encouraged to reply to questions if you know the answer or you can share a useful contribution.
