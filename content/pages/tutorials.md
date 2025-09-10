@@ -1,6 +1,6 @@
 Title: Tutorials
 Slug: tutorials
-Date: 2022-07-26
+Date: 2025-08-19
 <!--
     vim: foldmethod=marker
 -->
@@ -313,7 +313,7 @@ thoroughly been tested.
 #### <a id="tutorial-hw-example4"></a><a class="anchor-link" href="#tutorial-hw-example4">Step 4: Submit on Gradescope</a>
 
 Your submission is now ready to be submitted for grading on
-[Gradescope](https://www.gradescope.com/courses/NEW_COURSE_ID).
+[Gradescope](https://www.gradescope.com/courses/1112657).
 Simply create a `zip` archive of your `submission` directory you have created in
 your Git repository, e.g. `submission.zip`, and upload it to Gradescope by
 following the link above. You can use the command `zip -r submission.zip
