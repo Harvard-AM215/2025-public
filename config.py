@@ -4,7 +4,7 @@ AUTHOR = 'Ignacio Becker Troncoso'
 
 SEMESTER = 'Fall'
 
-YEAR = '2024'
+YEAR = '2025'
 
 SITEURL = ''
 

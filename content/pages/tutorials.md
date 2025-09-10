@@ -60,7 +60,7 @@ navigate back to <https://code.harvard.edu/AM215> you should see something
 similar to this:
 ![AM215 organization]({static}/pages/media/am215_org_initial.png)
 
-* The `main_2024` repository is the main AM215 class repository which is used
+* The `main_2025` repository is the main AM215 class repository which is used
   to distribute all of the class material during the semester. 
   In the first homework we will set this repository
   as an upstream such that you can conveniently unpack class material into your
@@ -211,7 +211,7 @@ The files the teaching staff will consider for grading have to be located in the
 directory `homework/hw3/submission`.  You are free to put other files below
 `homework/hw3` that might be useful when you revisit your work sometime later.
 The problem sheet might be one of those files.  Class handouts are distributed
-in the `main` [class repository](https://code.harvard.edu/AM215/main_2024).  You can
+in the `main` [class repository](https://code.harvard.edu/AM215/main_2025).  You can
 manually create these directories and copy the files you want into your `hw3`
 directory using, for example:
 
@@ -224,7 +224,7 @@ you can checkout all the distributed homework files at once with
 
         git checkout class/master -- homework/hw3
 
-assuming that the remote points to <https://code.harvard.edu/AM215/main_2024> and is
+assuming that the remote points to <https://code.harvard.edu/AM215/main_2025> and is
 locally named "`class`".  You may need to update your refs with `git fetch --all`
 before you invoke the checkout command above.
 
@@ -313,7 +313,7 @@ thoroughly been tested.
 #### <a id="tutorial-hw-example4"></a><a class="anchor-link" href="#tutorial-hw-example4">Step 4: Submit on Gradescope</a>
 
 Your submission is now ready to be submitted for grading on
-[Gradescope](https://www.gradescope.com/courses/821711).
+[Gradescope](https://www.gradescope.com/courses/NEW_COURSE_ID).
 Simply create a `zip` archive of your `submission` directory you have created in
 your Git repository, e.g. `submission.zip`, and upload it to Gradescope by
 following the link above. You can use the command `zip -r submission.zip
