@@ -90,7 +90,7 @@ IGNORE_FILES = [
     "*.txt", "*.xmls", "*.aux", "*.snm", "*.toc", "*.out", "*.nav", 'HW*.md'
 ]
 
-STATIC_PATHS = ['lectures', 'labs', 'homeworks']
+STATIC_PATHS = ['lectures', 'homeworks']
 
 # DIRECT_TEMPLATES = ['index', 'search', 'tags', 'category']
 DIRECT_TEMPLATES = ['index', 'search']
