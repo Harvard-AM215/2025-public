@@ -1,7 +1,7 @@
 Title: Resources
 Category: Resources
 Slug: resources
-Date: 2024-08-19
+Date: 2025-08-19
 Tags: Git, Unix, Python
 
 ## Books

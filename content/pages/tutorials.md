@@ -141,7 +141,7 @@ The following are the basic rules we apply for homework submissions:
    currently not support submission directly via your Git repository.  You
    therefore have to create a `zip` archive of your `submission` directory
    created in step 2 above and upload the archive on
-   [Gradescope](https://www.gradescope.com/courses/821711).
+   [Gradescope](https://www.gradescope.com/courses/1112657).
    It is important that you zip-up the *directory* and not individual files
    inside.  You can use the command `zip -r submission.zip submission/`, where
    the `-r` option means add files *recursively*, `submission.zip` is the name

@@ -1,6 +1,6 @@
 Title: Projects
 Slug: projects
-Date: 2024-08-20
+Date: 2025-08-20
 
 * [Mini project 1](#mini-1)
 * [Mini project 2](#mini-2)
