@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Fall 2024 - Harvard University, Institute for Applied Computational Science. "
+    />
+    <meta name="author" content="Ignacio Becker Troncoso" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Inconsolata:400,700"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../style/tipuesearch/tipuesearch.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../style/images/favicon.ico"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../style/css/iacs.css" />
+
+    <title>Harvard AM215 | Resources</title>
+
+    <style>
+      .navbar {
+        background-color: #8996A0
+      }
+
+      .katex {
+        font: normal 1.21em KaTeX_Math, Times New Roman, serif !important;
+      }
+    </style>
+  </head>
+  <body>
+<nav class="navbar navbar-dark navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand" href="..">
+      <img
+        class="navbar-brand-logo"
+        src="../style/images/logo.png"
+      />
+      <h3 class="course-title">AM215</h3>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarsDefault"
+      aria-controls="navbarsDefault"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/tutorials.html">Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/resources.html">Resources</a>
+        </li>
+        <form
+          class="form-inline my-2"
+          action="../search.html"
+          onsubmit="return validateForm(this.elements['q'].value);"
+        >
+          <div class="input-group input-group-sm">
+            <input
+              class="form-control"
+              type="text"
+              name="q"
+              placeholder="Search Topic"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-default" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </ul>
+    </div>
+    <!-- .collapse navbar-collapse -->
+  </div>
+  <!-- .container -->
+</nav>
+    <main id="content" class="container">
+  <h1>Resources</h1>
+  <h2>Books</h2>
+<p>No book is required. But we highly recommend two books for this course.</p>
+<ul>
+<li>Fluent Python: Clear, Concise, and Effective Programming, by Luciano Ramalho.
+  Publisher: O'Reilly Media. 2015.</li>
+<li>Designing Data Intensive Applications, by
+  <a href="http://dataintensive.net/">http://dataintensive.net/</a>, The Big Ideas Behind
+  Reliable, Scalable, and Maintainable Systems by Martin Kleppmann. Publisher:
+  O'Reilly Media 2014</li>
+</ul>
+<h2>Other useful books</h2>
+<ul>
+<li>The Practice of Programming by Brian W. Kernighan and Rob Pike,
+  Addison-Wesley, 1999.</li>
+<li>Skiena: The Algorithm Design Manual</li>
+<li>Abelson, Sussmann and Sussmann: SICP and python based online version based on
+  it: <a href="http://composingprograms.com/">http://composingprograms.com/</a></li>
+<li>High Performance Python: By Micha Gorelick, Ian Ozsvald. Oreilly Media 2014.</li>
+</ul>
+<h2>Papers and other readings</h2>
+<ul>
+<li><a href="https://www.python.org/dev/peps/pep-0008/">Python pep8</a></li>
+<li><a href="https://github.com/amontalenti/elements-of-python-style">An opinionated guide to python style</a></li>
+</ul>
+<h2>Git</h2>
+<ul>
+<li><strong>Recommended:</strong> <a href="https://jwiegley.github.io/git-from-the-bottom-up/">Git from the bottom up</a></li>
+<li><strong>Recommended:</strong> <a href="http://git-scm.com/book/en/v2">Git Book</a></li>
+<li><a href="https://www.youtube.com/user/github">GitHub Videos and Training</a></li>
+<li><a href="https://try.github.io/levels/1/challenges/1">GitHub Interactive Tutorial</a></li>
+<li><a href="http://rogerdudler.github.io/git-guide/">Git - the simple guide</a></li>
+<li><a href="https://git-scm.com/docs">Git Reference</a></li>
+<li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a></li>
+<li><a href="http://gitimmersion.com">Git Immersion Tutorial</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials">Git Atlassian Tutorial</a></li>
+</ul>
+<h2>Python</h2>
+<ul>
+<li><a href="https://www.python.org/about/gettingstarted/">python</a></li>
+<li><a href="https://learnxinyminutes.com/docs/python/">Rich overview of Python 3 language features</a> (recommended to work through)</li>
+<li><a href="https://github.com/rougier/scientific-visualization-book">Scientific visualization with Python and Matplotlib</a></li>
+</ul>
+<h2>Vim</h2>
+<ul>
+<li>Spend 30 minutes to complete the <code>vimtutor</code>.  After you have installed <code>vim</code>,
+  execute the following command in your command line: <code>vimtutor</code></li>
+<li><a href="https://devhints.io/vim">Vim Cheat Sheet</a></li>
+<li><a href="http://vimcasts.org/">Vimcasts</a></li>
+<li><a href="https://www.amazon.com/Practical-Vim-Edit-Speed-Thought/dp/1680501275">Recommended book</a></li>
+</ul>
+<h2>Bash</h2>
+<ul>
+<li><a href="https://files.fosswire.com/2007/08/fwunixref.pdf">Command Line Reference Cheat Sheet</a></li>
+<li><a href="https://devhints.io/bash">Bash scripting Cheat Sheet</a></li>
+</ul>
+<h2>Unix-Related</h2>
+<ul>
+<li><a href="https://missing.csail.mit.edu/">Basic Computing Tools</a></li>
+</ul>
+<h2><a id="windows"></a><a class="anchor-link" href="#windows">Windows Users</a></h2>
+<ul>
+<li><a href="../pages/media/linux_subsystem.pdf">Using Linux Subsystem on Windows 10</a></li>
+<li><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY SSH client for Windows</a></li>
+</ul>
+<!-- ## <a id="docker"></a><a class="anchor-link" href="#docker">Ubuntu Docker Image</a>
+
+You can get an Ubuntu based Docker container with
+
+
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>iacs/cs107_ubuntu
+</code></pre></div>
+
+
+
+The container is hosted [here](https://hub.docker.com/r/iacs/cs107_ubuntu/tags).
+The `Dockerfile` and `run_cs107_docker.sh` launch script can be found in the
+[class repository](https://code.harvard.edu/CS107/main/tree/master/docker). -->
+    </main>
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">Copyright 2024 &copy;
+      <a class="text-muted" href="https://seas.harvard.edu/applied-computation">SEAS</a>
+    </span>
+  </div>
+</footer>     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
