@@ -44,7 +44,7 @@ University.
 1. Obtain your Harvard
    [NetID](https://harvard.service-now.com/ithelp?id=kb_article&sys_id=507aca5a1b653700efd8a79b2d4bcb59)
 2. Each day, in the afternoon, the members of the organization will be updated.
-3. If the daily update happened and you cannot access the organization, please fill [this form](https://docs.google.com/forms/d/1TxncfkQD0EFG32qalEpsRYWcnoONKOfw6ThyAtsfmy0). You  must use our `*.harvard.edu` email.
+3. If the daily update happened and you cannot access the organization, please fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSdyVCcO8XfRCBV6E7pgh86JOuKjVs6oMnqUUir3E3kdc_tHIw/viewform?usp=header). You must use your `*.harvard.edu` email and include both your HUID and NetID.
 4. Once added to the organization, navigate to <https://code.harvard.edu/AM215>
    (login if necessary) and click the green "New" button to add a new
    repository.

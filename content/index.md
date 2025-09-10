@@ -33,7 +33,7 @@ The examples we will study, along with associated questions we might address,inc
 git clone git@code.harvard.edu:AM215/main_2025.git
 ```
 
-Membership to the AM215 organization be updated daily once the semester starts. If for some reason you are not given access, please wait until the afternoon. If you cannot access the organization, please fill [this form](https://docs.google.com/forms/d/1TxncfkQD0EFG32qalEpsRYWcnoONKOfw6ThyAtsfmy0/edit). You  must use our `*.harvard.edu` email and include your [NetID](https://harvard.service-now.com/ithelp?id=kb_article&sys_id=507aca5a1b653700efd8a79b2d4bcb59), which is also your <https://code.harvard.edu> username (something similar to `abc123`).
+Membership to the AM215 organization be updated daily once the semester starts. If for some reason you are not given access, please wait until the afternoon. If you cannot access the organization, please fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSdyVCcO8XfRCBV6E7pgh86JOuKjVs6oMnqUUir3E3kdc_tHIw/viewform?usp=header). You must use your `*.harvard.edu` email and include both your HUID and your [NetID](https://harvard.service-now.com/ithelp?id=kb_article&sys_id=507aca5a1b653700efd8a79b2d4bcb59), which is also your <https://code.harvard.edu> username (something similar to `abc123`).
 
 ### <a id="class-forum"></a><a class="anchor-link" href="#class-forum">Class Discussion</a>
 
