@@ -9,7 +9,7 @@
     />
     <meta
       name="description"
-      content="Fall 2024 - Harvard University, Institute for Applied Computational Science. "
+      content="Fall 2025 - Harvard University, Institute for Applied Computational Science. "
     />
     <meta name="author" content="Ignacio Becker Troncoso" />
 
@@ -152,11 +152,6 @@
 </ul>
 </li>
 </ul>
-<!-- * [Pair-programming Workflow](#tutorial-pp)
-    * [Protocol](#tutorial-pp-protocol)
-    * [How to launch `tmate`](#tutorial-pp-tmate)
-        * [Recommended Workflow](#tutorial-pp-tmate1)  -->
-
 <!-- Private Repo {{{1 -->
 <h2><a id="tutorial-repo"></a><a class="anchor-link" href="#tutorial-repo">How to Setup your Private Class Repository</a></h2>
 <blockquote>
@@ -184,7 +179,7 @@ University.</p>
 <li>Obtain your Harvard
    <a href="https://harvard.service-now.com/ithelp?id=kb_article&amp;sys_id=507aca5a1b653700efd8a79b2d4bcb59">NetID</a></li>
 <li>Each day, in the afternoon, the members of the organization will be updated.</li>
-<li>If the daily update happened and you cannot access the organization, please fill <a href="https://docs.google.com/forms/d/1TxncfkQD0EFG32qalEpsRYWcnoONKOfw6ThyAtsfmy0">this form</a>. You  must use our <code>*.harvard.edu</code> email.</li>
+<li>If the daily update happened and you cannot access the organization, please fill <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyVCcO8XfRCBV6E7pgh86JOuKjVs6oMnqUUir3E3kdc_tHIw/viewform?usp=header">this form</a>. You must use your <code>*.harvard.edu</code> email and include both your HUID and NetID.</li>
 <li>Once added to the organization, navigate to <a href="https://code.harvard.edu/AM215">https://code.harvard.edu/AM215</a>
    (login if necessary) and click the green "New" button to add a new
    repository.</li>
@@ -200,7 +195,7 @@ navigate back to <a href="https://code.harvard.edu/AM215">https://code.harvard.e
 similar to this:
 <img alt="AM215 organization" src="../pages/media/am215_org_initial.png"></p>
 <ul>
-<li>The <code>main_2024</code> repository is the main AM215 class repository which is used
+<li>The <code>main_2025</code> repository is the main AM215 class repository which is used
   to distribute all of the class material during the semester. 
   In the first homework we will set this repository
   as an upstream such that you can conveniently unpack class material into your
@@ -275,7 +270,7 @@ permissions. <strong>Never share your <em>private key</em> <code>~/.ssh/id_rsa</
    currently not support submission directly via your Git repository.  You
    therefore have to create a <code>zip</code> archive of your <code>submission</code> directory
    created in step 2 above and upload the archive on
-   <a href="https://www.gradescope.com/courses/821711">Gradescope</a>.
+   <a href="https://www.gradescope.com/courses/1112657">Gradescope</a>.
    It is important that you zip-up the <em>directory</em> and not individual files
    inside.  You can use the command <code>zip -r submission.zip submission/</code>, where
    the <code>-r</code> option means add files <em>recursively</em>, <code>submission.zip</code> is the name
@@ -346,7 +341,7 @@ create additional branches besides <code>hwX</code> if suitable.</p>
 directory <code>homework/hw3/submission</code>.  You are free to put other files below
 <code>homework/hw3</code> that might be useful when you revisit your work sometime later.
 The problem sheet might be one of those files.  Class handouts are distributed
-in the <code>main</code> <a href="https://code.harvard.edu/AM215/main_2024">class repository</a>.  You can
+in the <code>main</code> <a href="https://code.harvard.edu/AM215/main_2025">class repository</a>.  You can
 manually create these directories and copy the files you want into your <code>hw3</code>
 directory using, for example:</p>
 <div class="highlight"><pre><span></span><code>    mkdir -p homework/hw3/submission
@@ -359,7 +354,7 @@ you can checkout all the distributed homework files at once with</p>
 <div class="highlight"><pre><span></span><code>    git checkout class/master -- homework/hw3
 </code></pre></div>
 
-<p>assuming that the remote points to <a href="https://code.harvard.edu/AM215/main_2024">https://code.harvard.edu/AM215/main_2024</a> and is
+<p>assuming that the remote points to <a href="https://code.harvard.edu/AM215/main_2025">https://code.harvard.edu/AM215/main_2025</a> and is
 locally named "<code>class</code>".  You may need to update your refs with <code>git fetch --all</code>
 before you invoke the checkout command above.</p>
 <p>The homework sheet will state what files have to be submitted.  For this <code>hw3</code>
@@ -443,7 +438,7 @@ points if you prematurely merge your PR.</p>
 </blockquote>
 <h4><a id="tutorial-hw-example4"></a><a class="anchor-link" href="#tutorial-hw-example4">Step 4: Submit on Gradescope</a></h4>
 <p>Your submission is now ready to be submitted for grading on
-<a href="https://www.gradescope.com/courses/821711">Gradescope</a>.
+<a href="https://www.gradescope.com/courses/1112657">Gradescope</a>.
 Simply create a <code>zip</code> archive of your <code>submission</code> directory you have created in
 your Git repository, e.g. <code>submission.zip</code>, and upload it to Gradescope by
 following the link above. You can use the command <code>zip -r submission.zip
@@ -457,237 +452,6 @@ ignore such archives by adding the line</p>
 </code></pre></div>
 
 <p>to your <code>.gitignore</code> file in your repository root.</p>
-<!-- 1}}} -->
-<!-- Pair-Programming {{{1 -->
-<!-- ## <a id="tutorial-pp"></a><a class="anchor-link" href="#tutorial-pp">Pair-programming Workflow</a>
-
-Exercises performed during pair-programming sections should be put under version
-control similar to homework assignments (see the [Homework
-Workflow](#tutorial-hw) section above).
-
-> _You must not branch off and create a pull-request for pair-programming
-> exercises_.  Just add and commit your work on the `main` or `master` branch
-> and push them to your repository (_make sure you are on the correct branch
-> before you commit!_).
-
-The following are the basic rules we apply for pair-programming submissions:
-
-1. Your private repository should contain a directory named `lab` with
-   sub-directories for each session. The sub-directories should be named `ppX`
-   where `X` is the session number.
-2. Within the sub-directory `ppX`, place the exercise files that you completed
-   during the pair-programming sections. The exercises must have the name
-   `exercise_Y.ext` where `Y` corresponds to the exercise number and `ext` is
-   the proper extension (`.py`, `.sh`, `.c`, `.cpp`) depending on the exercise.
-   Here is an example how it may look like:
-   ![pp files]({static}/pages/media/pp_files.png)
-
-> The pair-programming exercises will be graded for <a href="./syllabus.html#pp-submission">completeness</a> and help us ensure you
-> are on the right track.  You may lose points for the completeness part if you
-> do not follow these two basic rules.
-
-
-### <a id="tutorial-pp-protocol"></a><a class="anchor-link" href="#tutorial-pp-protocol">Protocol</a>
-
-In class we are focusing on command line tools for the development of software
-projects in computational science.  It is important that you get familiar with a
-small selection of such tools and integrate them in your development process.
-The pair-programming sections aim at combining some of these tools together to
-provide you with hands-on experience while developing software.  The key is the
-"pair" in pair-programming.  The exchange of knowledge between team mates in
-these pair-programming sections is essential for learning said tools or learning
-something new you did not know before.
-
-The pair-programming works by using a tool called [`tmate`](https://tmate.io/)
-which is based on the [`tmux` terminal
-multiplexer](https://en.wikipedia.org/wiki/Tmux).  It allows for easy sharing of
-a command line session or a specific instance of a program in read/write and
-read-only modes via `ssh` or web browsers.  Check out this [blog
-post](https://www.hamvocke.com/blog/remote-pair-programming-with-tmux/) for
-more. Text file editing will be performed in any text editor that supports a
-text-based user interface (TUI).  Recommended choices are `vim` or `emacs`.
-
-If you are mainly working on a Windows operating system, you should install the
-[Windows Subsystem for
-Linux](https://docs.microsoft.com/en-us/windows/wsl/about).  A small guide for
-doing so can be found [here]({attach}/pages/media/linux_subsystem.pdf).  See the
-[How to Launch `tmate`](./tutorials.html#tutorial-pp-tmate) section below for
-the steps to launch `tmate` on your laptop.
-
-> **Note:** `tmate` is perfect for any coding related communication.  For
-> example, debugging, work on the project and of course pair-programming.  There
-> is no audio channel integrated in `tmate`.  If students are remote, a zoom
-> session or similar must be established for oral communication.
-
-The exercises in the pair-programming sections are necessarily collaborative.
-Each member of the group will turn in the same script.  Adhere to the following
-_workflow_ when solving pair-programming exercises:
-
-* For each exercise (or sub-exercise for big problems), there will be one
-  *sharer*, one *coder*, and one *listener*. **This assumes a group size of 3**.
-  If the group only has two people, then either one of you can take the sharer's
-  role.
-* The *sharer* will start each coding session and document interactions
-  including points of contention and challenges. The *coder* will be in charge
-  of writing the code. The *listener* will make suggestions and may offer tweaks
-  from time to time.
-* The *sharer* starts a new `tmate` session and invites the other team mates to
-  join the session.  Ideally you want to start the session inside the directory
-  of the current pair-programming exercise in your `git` repository.  You may
-  share a read/write link either through `ssh` or a web browser.
-  > **Note:** the sharer allows the others access to her/his computer. Any
-  > abusive behavior that may cause harm on the sharer's system will not be
-  > tolerated and are forwarded to the dean's office.
-* After the team mates have accepted the invite, they will be able to share the
-  terminal instance and can create new files or execute Python together.
-* The team should discuss a strategy on how to approach the exercise.
-* The *coder* should start writing some code with input from the other two team
-  members.
-* _Before each section that you work on, place a comment indicating which team
-  member worked on that section._  For example, a `bash` script could look like
-  this:
-
-
-<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
-<span class="c1"># File       : exercise_1.sh</span>
-<span class="c1"># Created    : Sat Aug 07 2021 04:58:49 PM (-0400)</span>
-<span class="c1"># Coder      : Alice</span>
-<span class="c1"># Listener   : Bob</span>
-<span class="c1"># Sharer     : Alice</span>
-
-<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Hello World&#39;</span>
-
-<span class="c1">### Main point of contention: whether to capitalize &quot;W&quot; in &quot;world&quot;</span>
-</code></pre></div>
-
-
-
-* For small exercises, each team member can play a single role once.
-* For large exercises, the team members may rotate roles. The exercise will make
-  it clear when you should rotate.
-* At the end of the exercise, the developed code is inside the sharer's `git`
-  repository that can readily be committed.  Links to download these files can
-  be shared with the other team mates such that they can update their
-  repositories as well.  Note that the exercise code will contain comments
-  pertaining to who worked on which section.
-
-
-### <a id="tutorial-pp-tmate"></a><a class="anchor-link" href="#tutorial-pp-tmate">How to launch `tmate`</a>
-
-> **Disclaimer:** [`tmate`](https://tmate.io/) is a tool to _share_ a terminal
-> session and interact with other people.  If you host a session, it means the
-> instance runs on your local computer and *you are in control* of how much
-> permissions you want assign to your mates.  There are 2 ways to share a
-> session:
->
-> 1. read-only: mates that connect to your session can only _read_ data (this is
->    safe provided the data you expose is safe).
-> 2. read-write: mates that connect to your session can _read_ **and** _write_
->    data.  This is unsafe if you share a session with an mistrusted person.
-
-#### <a id="tutorial-pp-tmate1"></a><a class="anchor-link" href="#tutorial-pp-tmate1">Recommended Workflow</a>
-
-1. Launch the <a href="./resources.html#docker">CS107/AC207 docker
-   container</a> with the working directory mounted (see the provided
-   [`run_cs107_docker.sh` launch
-   script](https://code.harvard.edu/CS107/main/blob/master/docker/run_cs107_docker.sh))
-2. Start `tmate` inside the docker container
-
-Wrapping `tmate` in a docker container provides another layer of security.  You
-can also install `tmate` using your distribution package manager (on Linux or
-[homebrew](https://brew.sh/) on MacOSX) and skip step 1 if you wish not to use a
-container.
-
-**Steps:**
-
-* Assume Docker is installed and we have pulled the [CS107/AC207 docker
-  image](https://hub.docker.com/r/iacs/cs107_ubuntu/tags).  You can install the
-  [`run_cs107_docker.sh` launch
-  script](https://code.harvard.edu/CS107/main/blob/master/docker/run_cs107_docker.sh)
-  in your `PATH` for convenience (e.g. `~/bin/run_cs107_docker.sh` and add this
-  directory to your `PATH` environment variable).  Be sure that the
-  `run_cs107_docker.sh` script is _executable_.  See the `chmod` command to
-  change the permissions of the script.
-* Assume you want to work on the [PP1
-  exercise](https://code.harvard.edu/CS107/main/tree/master/lab/pp1) and you are
-  in the `lab` directory of your private Git repo and `pp1` exists.  Launch the
-  docker container and mount the `pp1` directory in your repository:
-
-
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>run_cs107_docker.sh<span class="w"> </span>pp1/
-root@0a076feb425f:~#
-</code></pre></div>
-
-
-
-*  You are now inside a running docker container.  Note that the hostname
-  `0a076feb425f` is arbitrary and yours will differ.
-  Launch `tmate` (it is already installed in the container):
-
-
-<div class="highlight"><pre><span></span><code>root@0a076feb425f:~#<span class="w"> </span>tmate
-Tip:<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>wish<span class="w"> </span>to<span class="w"> </span>use<span class="w"> </span>tmate<span class="w"> </span>only<span class="w"> </span><span class="k">for</span><span class="w"> </span>remote<span class="w"> </span>access,<span class="w"> </span>run:<span class="w"> </span>tmate<span class="w"> </span>-F
-To<span class="w"> </span>see<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>messages<span class="w"> </span>again,<span class="w"> </span>run<span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>tmate<span class="w"> </span>session:<span class="w"> </span>tmate<span class="w"> </span>show-messages
-Press<span class="w"> </span>&lt;q&gt;<span class="w"> </span>or<span class="w"> </span>&lt;ctrl-c&gt;<span class="w"> </span>to<span class="w"> </span><span class="k">continue</span>
----------------------------------------------------------------------
-Connecting<span class="w"> </span>to<span class="w"> </span>ssh.tmate.io...
-Note:<span class="w"> </span>clear<span class="w"> </span>your<span class="w"> </span>terminal<span class="w"> </span>before<span class="w"> </span>sharing<span class="w"> </span><span class="nb">readonly</span><span class="w"> </span>access
-web<span class="w"> </span>session<span class="w"> </span><span class="nb">read</span><span class="w"> </span>only:<span class="w"> </span>https://tmate.io/t/ro-qNRV5QRVWkW3qr55sfATkBegr
-ssh<span class="w"> </span>session<span class="w"> </span><span class="nb">read</span><span class="w"> </span>only:<span class="w"> </span>ssh<span class="w"> </span>ro-qNRV5QRVWkW3qr55sfATkBegr@nyc1.tmate.io
-web<span class="w"> </span>session:<span class="w"> </span>https://tmate.io/t/nMWurZc7Q6Zbv8EnX2wdhf6GB
-ssh<span class="w"> </span>session:<span class="w"> </span>ssh<span class="w"> </span>nMWurZc7Q6Zbv8EnX2wdhf6GB@nyc1.tmate.io
-</code></pre></div>
-
-
-
-* The `tmate` instance is now running and you can choose between 4 possible
-  links to share with your mates: 2 that can be run in your web browser and
-  another 2 to be used with `ssh` in your terminal (either read-only and
-  read/write).  Choose the appropriate link you want to share with your
-  pair-programming mates.
-* If you press `q` or `ctrl-c` you are dropped back to the shell.  The server
-  will tell you whenever mates join.  You can print the links again with `tmate
-  show-messages` (be careful when you are sharing screens on zoom for example).
-* **Note** that pressing `ctrl-d` or
-  typing `exit` in the shell will close the active terminal and if only one is
-  left, also the active `tmate` session.  This will close the connections to all
-  connected clients.  
-  You can now work together on the exercise.  For example:
-
-
-<div class="highlight"><pre><span></span><code>root@0a076feb425f:~#<span class="w"> </span>vim<span class="w"> </span>exercise_1.py
-</code></pre></div>
-
-
-
-* The image below shows a terminal session (left) and two mates connected in a
-  web browser window (right):
-  ![pp tmate]({static}/pages/media/pp_tmate.png)
-
-> **Note:** We run `tmate` with `root` in the docker container.  Do not run
-> `tmate` as root in any other situation (even here we could create a regular
-> user) and be careful with password-less `sudo` (avoid password-less `sudo` in
-> the first place).
-
-In order to use `ssh` you need to setup an `ssh` key if you have not done so
-already.  If you do not have such a key, you may create one by running
-
-
-<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-b<span class="w"> </span><span class="m">4096</span>
-</code></pre></div>
-
-
-
-If you are not dropped into a shell after you execute `tmate` it may be because
-you are using a shell different than `zsh`.  Install `zsh` on your system using
-your package manager and run `tmate` like this
-
-
-<div class="highlight"><pre><span></span><code><span class="nv">SHELL</span><span class="o">=</span>/bin/zsh<span class="w"> </span>tmate
-</code></pre></div>
-
-
-1}}} -->
     </main>
 
 <footer class="footer">
