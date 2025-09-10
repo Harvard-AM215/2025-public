@@ -10,3 +10,4 @@ config/sync-config.sh
 # Temporary sync files
 .sync-temp/
 venv
+.venv
